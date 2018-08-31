@@ -1,0 +1,98 @@
+body{
+
+}
+#background-image {
+   background-image: url("./images/jpeg/finalimage.jpg");
+   background-size: cover;
+
+}
+a{
+  color:Black;
+  font-size:17px;
+  margin:0 0 25px 0;
+}
+#hellopara{
+  position: relative;
+  top: -500;
+  margin: 0 0 0 -100px;
+}
+.left{
+  position: relative;
+border:10px solid black;
+width:25%;
+height: 25%;
+margin: 125px 0 0 500px;
+
+}
+
+
+
+.right {
+  position: relative;
+  border:10px solid black;
+  width: 25%;
+  height: 60%;
+  margin : -330px 0 0 900px;
+
+}
+
+.fstname,.phnum,.emailid{
+  border:0;
+  border-bottom:1px solid black;
+  margin-bottom: 10px;
+}
+
+
+
+#padding-text{
+  margin: -5px 0 0 10px;
+}
+
+#namecontainer
+{
+  position: relative;
+  top: -650px;
+  margin: 0 0 0 500px;
+}
+#frontpagimage{
+  margin:0 0 0 700px;
+
+}
+#webdesignanddevp{
+  position: relative;
+  margin: 0px 0 0 650px;
+
+}
+#imageofme
+  {
+    margin:-150px 0 0 0px;
+
+  }
+.imageinmiddle {
+    margin: 0 0 0 10px;
+  }
+
+.headingofname{
+  /*font-family: 'Rancho', cursive; */
+}
+
+#design{
+  font-family: 'Rancho', cursive;
+  font-size: 25px;
+}
+
+#sayhello{
+  font-family: 'Rancho', cursive;
+  font-size: 25px;
+}
+
+.details-of-me{
+      position: relative;
+      margin: 20px 0 50px 200px;
+
+}
+
+.web-development-container,.design-container,.photography-container,.about-education{
+  border:0 solid;
+  border-left:1px solid lightskyblue;
+}

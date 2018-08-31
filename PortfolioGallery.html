@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+        
+<hr>
+
+<h2>MY WORK</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('design')"> Design</button>
+  <button class="btn" onclick="filterSelection('photography')"> Photography</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column design">
+    <div class="content">
+      <img src="./images/png/GuideCollege.png" alt="Mountains" style="width:50%">
+      <h4>Guide</h4>
+      
+    </div>
+  </div>
+  <div class="column design">
+    <div class="content"> <br>
+    <img src="./images/png/Photography.png" alt="Lights" style="width:75%">
+    <br> <br> <br>
+      <h4>Photography Design</h4>
+     
+    </div>
+  </div>
+  <div class="column design">
+    <div class="content">
+    <img src="./images/png/Design.png" alt="Nature" style="width:50%">
+      <h4>Web Design</h4>
+    </div>
+  </div>
+  
+  <div class="column design">
+    <div class="content">
+      <img src="./images/png/WebDevelopment.png" alt="Car" style="width:75%">
+      <h4>Web development</h4>
+    </div>
+  </div>
+  <div class="column photography">
+    <div class="content">
+    <img src="./images/gallary/1.jpg" alt="Car" style="width:100%">
+      <h4>Ananth Photography</h4>
+    </div>
+  </div>
+  <div class="column photography">
+      <div class="content">
+      <img src="./images/gallary/2.jpg" alt="Car" style="width:100%">
+      <h4>Ananth Photography</h4>
+      </div>
+    </div>
+        <div class="column photography">
+            <div class="content">
+            <img src="./images/gallary/7.jpg" alt="Car" style="width:100%">
+             <h4>Ananth Photography</h4>
+            </div>
+        </div>
+        <div class="column photography">
+            <div class="content">
+            <img src="./images/gallary/8.jpg" alt="Car" style="width:100%">
+             <h4>Ananth Photography</h4>
+            </div>
+        </div>
+        <div class="column photography">
+            <div class="content">
+            <img src="./images/gallary/11.jpg" alt="Car" style="width:100%">
+             <h4>Ananth Photography</h4>
+            </div>
+        </div>
+        <div class="column photography">
+            <div class="content">
+            <img src="./images/gallary/3.jpg" alt="Car" style="width:100%">
+            <h4>Ananth Photography</h4>
+          </div>
+          </div>
+          <div class="column photography">
+              <div class="content">
+              <img src="./images/gallary/4.jpg" alt="Car" style="width:100%">
+              <h4>Ananth Photography</h4>
+            </div>
+            </div>
+            <div class="column photography">
+                <div class="content">
+                <img src="./images/gallary/5.jpg" alt="Car" style="width:100%">
+                 <h4>Ananth Photography</h4>
+                </div>
+            </div>
+            <div class="column photography">
+                <div class="content">
+                <img src="./images/gallary/12.jpg" alt="Car" style="width:100%">
+                <h4>Ananth Photography</h4>
+              </div>
+              </div>
+              <div class="column photography">
+                  <div class="content">
+                  <img src="./images/gallary/13.jpg" alt="Car" style="width:100%">
+                  <h4>Ananth Photography</h4>
+                </div>
+                </div>
+                <div class="column photography">
+                    <div class="content">
+                    <img src="./images/gallary/14.jpg" alt="Car" style="width:100%">
+                     <h4>Ananth Photography</h4>
+                    </div>
+              </div>
+              <div class="column photography">
+                  <div class="content">
+                  <img src="./images/gallary/27.jpg" alt="Car" style="width:100%">
+                   <h4>Ananth Photography</h4>
+                  </div>
+            </div>
+            <div class="column photography">
+                <div class="content">
+                <img src="./images/gallary/23.jpg" alt="Car" style="width:100%">
+                 <h4>Ananth Photography</h4>
+                </div>
+          </div> 
+          <div class="column photography">
+              <div class="content">
+              <img src="./images/gallary/24.jpg" alt="Car" style="width:100%">
+               <h4>Ananth Photography</h4>
+              </div>
+        </div>
+        <div class="column photography">
+            <div class="content">
+            <img src="./images/gallary/25.jpg" alt="Car" style="width:100%">
+             <h4>Ananth Photography</h4>
+            </div>
+      </div>
+      <div class="column photography">
+          <div class="content">
+          <img src="./images/gallary/20.jpg" alt="Car" style="width:100%">
+           <h4>Ananth Photography</h4>
+          </div>
+    </div>
+    <div class="column photography">
+        <div class="content">
+        <img src="./images/gallary/21.jpg" alt="Car" style="width:100%">
+         <h4>Ananth Photography</h4>
+        </div>
+  </div>
+  <div class="column photography">
+      <div class="content">
+      <img src="./images/gallary/22.jpg" alt="Car" style="width:100%">
+       <h4>Ananth Photography</h4>
+      </div>
+</div>
+<div class="column photography">
+    <div class="content">
+    <img src="./images/gallary/19.jpg" alt="Car" style="width:100%">
+     <h4>Ananth Photography</h4>
+    </div>
+</div>
+
+
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
